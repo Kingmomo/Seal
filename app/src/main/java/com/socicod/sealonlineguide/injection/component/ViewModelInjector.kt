@@ -3,7 +3,7 @@ package com.socicod.sealonlineguide.injection.component
 import dagger.Component
 import com.socicod.sealonlineguide.injection.module.NetworkModule
 import com.socicod.sealonlineguide.ui.post.PostListViewModel
-import com.socicod.sealonlineguide.ui.post.PostViewModel
+import com.socicod.sealonlineguide.ui.weapon.PostViewModel
 
 import javax.inject.Singleton
 

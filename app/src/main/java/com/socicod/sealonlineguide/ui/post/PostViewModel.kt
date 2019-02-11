@@ -1,29 +1,52 @@
-package com.socicod.sealonlineguide.ui.post
+package com.socicod.sealonlineguide.ui.weapon
 
 import android.arch.lifecycle.MutableLiveData
 import com.socicod.sealonlineguide.Model.Weapon
 import com.socicod.sealonlineguide.base.BaseViewModel
 
 class PostViewModel : BaseViewModel() {
-    private val postTitle = MutableLiveData<String>()
-    private val postBody = MutableLiveData<String>()
-    private val postLevel = MutableLiveData<String>()
+    private val weaponTitle = MutableLiveData<String>()
+    private val weaponDmg = MutableLiveData<String>()
+    private val weaponAcc = MutableLiveData<String>()
+    private val weaponMp = MutableLiveData<String>()
+    private val weaponAspd = MutableLiveData<String>()
+    private val weaponCrit = MutableLiveData<String>()
+    private val weaponEva = MutableLiveData<String>()
 
-    fun bind(post: Weapon) {
-        postTitle.value = post.nama
-        postBody.value = post.agi.toString()
-        postLevel.value = post.level.toString()
+    fun bind(weapon: Weapon) {
+        weaponTitle.value = weapon.pic.toString()
+        weaponDmg.value = weapon.dmg.toString()
+        weaponAcc.value = weapon.acc.toString()
+        weaponMp.value = weapon.mp.toString()
+        weaponAspd.value = weapon.aspd.toString()
+        weaponCrit.value = weapon.crit.toString()
+        weaponEva.value = weapon.eva.toString()
     }
 
-    fun getPostTitle(): MutableLiveData<String> {
-        return postTitle
+    fun getWeaponTitle(): MutableLiveData<String> {
+        return weaponTitle
     }
 
-    fun getPostBody(): MutableLiveData<String> {
-        return postBody
+
+
+    fun getWeaponDmg(): MutableLiveData<String> {
+        return weaponDmg
     }
 
-    fun getPostLevel(): MutableLiveData<String> {
-        return postLevel
+    fun getWeaponAcc(): MutableLiveData<String> {
+        return weaponAcc
     }
+    fun getWeaponMp(): MutableLiveData<String> {
+        return weaponMp
+    }
+    fun getWeaponAspd(): MutableLiveData<String> {
+        return weaponAspd
+    }
+    fun getWeaponCrit(): MutableLiveData<String> {
+        return weaponCrit
+    }
+    fun getWeaponEva(): MutableLiveData<String> {
+        return weaponEva
+    }
+
 }

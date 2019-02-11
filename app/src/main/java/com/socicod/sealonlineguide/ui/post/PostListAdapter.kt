@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.socicod.sealonlineguide.Model.Weapon
 import com.socicod.sealonlineguide.R
 import com.socicod.sealonlineguide.databinding.ItemPostBinding
+import com.socicod.sealonlineguide.ui.weapon.PostViewModel
 
 class PostListAdapter : RecyclerView.Adapter<PostListAdapter.ViewHolder>() {
     private lateinit var postList: List<Weapon>

@@ -6,6 +6,7 @@
             name="viewModel"
             type="com.socicod.sealonlineguide.ui.post.PostListViewModel" />
     </data>
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

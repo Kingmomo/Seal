@@ -5,7 +5,7 @@ import com.socicod.sealonlineguide.injection.component.DaggerViewModelInjector
 import com.socicod.sealonlineguide.injection.component.ViewModelInjector
 import com.socicod.sealonlineguide.injection.module.NetworkModule
 import com.socicod.sealonlineguide.ui.post.PostListViewModel
-import com.socicod.sealonlineguide.ui.post.PostViewModel
+import com.socicod.sealonlineguide.ui.weapon.PostViewModel
 
 abstract class BaseViewModel: ViewModel(){
     private val injector: ViewModelInjector = DaggerViewModelInjector
